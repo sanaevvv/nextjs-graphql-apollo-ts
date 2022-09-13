@@ -1,0 +1,25 @@
+query BlogAndCases {
+  blogs(first: 4, orderBy: updatedAt_DESC) {
+    title
+    date
+    tags
+    slug
+    content
+    coverPhoto {
+      url
+      width
+      height
+    }
+  }
+  caseStudies(first: 4, orderBy: updatedAt_DESC) {
+    title
+    tags
+    subheading
+    slug
+    coverPhoto {
+      url
+      width
+      height
+    }
+  }
+}

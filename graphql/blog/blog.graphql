@@ -1,0 +1,14 @@
+query getSingleBlog($slug: String!) {
+  blogs(where: { slug: $slug }) {
+    title
+    date
+    tags
+    slug
+    content
+    coverPhoto {
+      url
+      width
+      height
+    }
+  }
+}
